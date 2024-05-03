@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifyVoyageController">
+   <children>
+      <Label layoutX="213.0" layoutY="105.0" prefHeight="61.0" prefWidth="118.0" text="Title :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="166.0" prefHeight="61.0" prefWidth="212.0" text="Description :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="227.0" prefHeight="61.0" prefWidth="249.0" text="Date de Debut :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="288.0" prefHeight="61.0" prefWidth="281.0" text="Date de Fin :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="359.0" prefHeight="61.0" prefWidth="300.0" text="Nombre de personnes :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="420.0" prefHeight="61.0" prefWidth="212.0" text="Prix total :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="481.0" prefHeight="61.0" prefWidth="212.0" text="Propriete :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="552.0" prefHeight="61.0" prefWidth="212.0" text="Image :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="532.0" layoutY="564.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="61.0" prefWidth="268.0" text="Choisir une image">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="titreTF" layoutX="532.0" layoutY="116.0" prefHeight="46.0" prefWidth="268.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descTF" layoutX="532.0" layoutY="172.0" prefHeight="46.0" prefWidth="268.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nbrPersonneTF" layoutX="532.0" layoutY="365.0" prefHeight="46.0" prefWidth="268.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="prixTF" layoutX="532.0" layoutY="431.0" prefHeight="46.0" prefWidth="268.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="426.0" layoutY="34.0" prefHeight="61.0" prefWidth="212.0" text="Modifier Voyage">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="147.0" layoutY="695.0" mnemonicParsing="false" onAction="#Modify" prefHeight="61.0" prefWidth="175.0" text="Modifier">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="914.0" layoutY="739.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="23.0" prefWidth="75.0" text="Cancel" />
+      <DatePicker fx:id="dateDeb" layoutX="531.0" layoutY="233.0" prefHeight="50.0" prefWidth="268.0" />
+      <DatePicker fx:id="dateFin" layoutX="531.0" layoutY="299.0" prefHeight="50.0" prefWidth="268.0" />
+      <ComboBox fx:id="propCB" layoutX="532.0" layoutY="502.0" prefHeight="50.0" prefWidth="268.0" promptText="Choisir Propriete" />
+   </children>
+</AnchorPane>

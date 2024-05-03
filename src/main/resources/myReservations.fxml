@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyReservationsController">
+   <children>
+      <TableView fx:id="tabRes" layoutX="129.0" layoutY="111.0" prefHeight="317.0" prefWidth="748.0">
+         <columns>
+            <TableColumn fx:id="voyIdCol" prefWidth="127.19998168945312" text="voyage_id" />
+            <TableColumn fx:id="nbrGuestCol" prefWidth="218.40003967285156" text="number guest" />
+            <TableColumn fx:id="priceCol" prefWidth="106.39996337890625" text="total price" />
+            <TableColumn fx:id="statusCol" prefWidth="184.00006103515625" text="status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
